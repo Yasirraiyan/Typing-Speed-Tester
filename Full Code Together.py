@@ -19,7 +19,14 @@ choosingsentence = random.choice(sentences)
 print("Selected sentence is:", choosingsentence)
 
 # Start the timer before user starts typing
-input("Press Enter to start typing the sentence...")
+
+def CheckValidityofinputsentence(choosingsentence):
+    if(choosingsentence in sentences):
+        print("The sentence is valid:")
+        return 1;
+    else:
+        print("The sentence is invalid")
+        return 0
 starttime = time.time()
 
 # Get user input
