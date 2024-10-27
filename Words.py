@@ -1,0 +1,1 @@
+words = len(choosingsentence.split())
